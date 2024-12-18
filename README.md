@@ -5,7 +5,7 @@ A utility for converting ESTree ASTs into CSTML CSTs
 ## Usage
 
 ```js
-import { parse } from '@babel/parse'; // or your favorite ESTree-compliant parser
+import { parse } from 'meriyah'; // or your favorite ESTree-compliant parser
 import { printSource } from '@bablr/agast-helpers/tree';
 import { cstmlFromESTree } from '@bablr/js-esrap';
 
