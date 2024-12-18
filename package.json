@@ -11,6 +11,9 @@
     ".": "./lib/index.js"
   },
   "sideEffects": false,
+  "scripts": {
+    "test": "mocha test/*.test.js"
+  },
   "dependencies": {
     "@bablr/agast-helpers": "^0.5.0",
     "@bablr/agast-vm-helpers": "^0.5.0",
@@ -27,7 +30,9 @@
     "eslint-import-resolver-enhanced-resolve": "^1.0.5",
     "eslint-plugin-import": "^2.27.5",
     "meriyah": "6.0.3",
-    "prettier": "^2.6.2"
+    "mocha": "11.0.1",
+    "prettier": "^2.6.2",
+    "expect": "^29.7.0"
   },
   "repository": "github:bablr-lang/js-esrap",
   "homepage": "https://github.com/bablr-lang/js-esrap",
