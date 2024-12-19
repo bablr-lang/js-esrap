@@ -12,7 +12,7 @@ const source = readFileSync(rel`../lib/handlers.js`, 'utf8');
 describe('parsing own source code', () => {
   it('parses as CSTML', () => {
     expect(
-      printSource(cstmlFromESTree(parse(source, { module: true }))).replace(/\s+/g, '\n'),
+      printSource(cstmlFromESTree(parse(source, { module: true }))).replace(/\s+/g, '\n') + '\n',
     ).toEqual(source.replace(/\s+/g, '\n'));
   });
 });
